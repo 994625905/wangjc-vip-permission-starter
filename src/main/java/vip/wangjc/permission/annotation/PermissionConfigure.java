@@ -27,7 +27,7 @@ import java.lang.annotation.Target;
 public @interface PermissionConfigure {
 
     /**
-     * 页面类型，必填项
+     * 页面类型（freemarker，thymeleaf），必填项
      * @return
      */
     PermissionPageType pageType();
