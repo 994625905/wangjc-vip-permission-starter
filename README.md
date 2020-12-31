@@ -128,7 +128,7 @@ public abstract class AbstractPermissionError {
             /** 权限认证服务： 根据userId，userName获取用户签名 */
             String userSign = permissionAuthService.authPermissionUser(userModel.getId(), userModel.getLoginname());
 
-            /** 权限认证服务：设置权限菜单缓存 */
+            /** 权限认证服务：设置权限菜单缓存,permission和url分别为菜单对应字段名称，内部涉及到反射 */
             permissionAuthService.authPermissionList(list,"permission","url",userSign);
 
 ```
