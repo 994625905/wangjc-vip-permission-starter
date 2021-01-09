@@ -1,6 +1,6 @@
-package vip.wangjc.permission.error.rewrite;
+package vip.wangjc.permission.error;
 
-import vip.wangjc.permission.error.AbstractPermissionError;
+import vip.wangjc.permission.error.abstracts.AbstractPermissionError;
 import vip.wangjc.permission.error.PermissionErrorResult;
 
 /**

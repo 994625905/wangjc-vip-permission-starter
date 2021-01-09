@@ -231,10 +231,10 @@ public @interface Permission {
 │  │  │              │  │  PermissionCacheServiceBuilder.java （权限缓存服务的构建器）
 │  │  │              │  │
 │  │  │              │  ├─expire
-│  │  │              │  │  │  AbstractCacheExpireBuilder.java （抽象类：缓存有效时间的构建器）
+│  │  │              │  │  │  DefaultCacheExpireBuilder.java （默认有效时间）
 │  │  │              │  │  │
-│  │  │              │  │  └─rewrite
-│  │  │              │  │          DefaultCacheExpireBuilder.java （默认有效时间）
+│  │  │              │  │  └─abstracts
+│  │  │              │  │          AbstractCacheExpireBuilder.java （抽象类：缓存有效时间的构建器）
 │  │  │              │  │
 │  │  │              │  └─service
 │  │  │              │      │  PermissionCacheService.java （权限缓存服务）
@@ -251,11 +251,11 @@ public @interface Permission {
 │  │  │              │      PermissionUserAuth.java （权限认证的用户）
 │  │  │              │
 │  │  │              ├─error
-│  │  │              │  │  AbstractPermissionError.java （抽象类：权限的错误处理）
+│  │  │              │  │  DefaultPermissionError.java （默认的权限错误处理）
 │  │  │              │  │  PermissionErrorResult.java （权限的错误结果集）
 │  │  │              │  │
-│  │  │              │  └─rewrite
-│  │  │              │          DefaultPermissionError.java （默认的权限错误处理）
+│  │  │              │  └─abstracts
+│  │  │              │          AbstractPermissionError.java （抽象类：权限的错误处理）
 │  │  │              │
 │  │  │              ├─page
 │  │  │              │  │  PermissionPageTag.java （权限的页面标签）

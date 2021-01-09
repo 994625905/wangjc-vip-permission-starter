@@ -1,4 +1,4 @@
-package vip.wangjc.permission.cache.expire;
+package vip.wangjc.permission.cache.expire.abstracts;
 
 /**
  * 缓存有效时间的构建器抽象类

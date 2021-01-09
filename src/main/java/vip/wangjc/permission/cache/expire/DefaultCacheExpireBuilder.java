@@ -1,6 +1,6 @@
-package vip.wangjc.permission.cache.expire.rewrite;
+package vip.wangjc.permission.cache.expire;
 
-import vip.wangjc.permission.cache.expire.AbstractCacheExpireBuilder;
+import vip.wangjc.permission.cache.expire.abstracts.AbstractCacheExpireBuilder;
 
 /**
  * 默认的缓存有效时间的构建器

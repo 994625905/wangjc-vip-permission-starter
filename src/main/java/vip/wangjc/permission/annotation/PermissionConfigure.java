@@ -1,12 +1,12 @@
 package vip.wangjc.permission.annotation;
 
 import org.springframework.context.annotation.Import;
-import vip.wangjc.permission.cache.expire.AbstractCacheExpireBuilder;
-import vip.wangjc.permission.cache.expire.rewrite.DefaultCacheExpireBuilder;
+import vip.wangjc.permission.cache.expire.abstracts.AbstractCacheExpireBuilder;
+import vip.wangjc.permission.cache.expire.DefaultCacheExpireBuilder;
 import vip.wangjc.permission.entity.PermissionCacheType;
 import vip.wangjc.permission.entity.PermissionPageType;
-import vip.wangjc.permission.error.AbstractPermissionError;
-import vip.wangjc.permission.error.rewrite.DefaultPermissionError;
+import vip.wangjc.permission.error.abstracts.AbstractPermissionError;
+import vip.wangjc.permission.error.DefaultPermissionError;
 import vip.wangjc.permission.register.PermissionRegister;
 
 import java.lang.annotation.ElementType;

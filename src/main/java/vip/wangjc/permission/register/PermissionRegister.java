@@ -7,10 +7,10 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.type.AnnotationMetadata;
 import vip.wangjc.permission.annotation.PermissionConfigure;
-import vip.wangjc.permission.cache.expire.AbstractCacheExpireBuilder;
+import vip.wangjc.permission.cache.expire.abstracts.AbstractCacheExpireBuilder;
 import vip.wangjc.permission.entity.PermissionCacheType;
 import vip.wangjc.permission.entity.PermissionPageType;
-import vip.wangjc.permission.error.AbstractPermissionError;
+import vip.wangjc.permission.error.abstracts.AbstractPermissionError;
 
 /**
  * permission的注册器

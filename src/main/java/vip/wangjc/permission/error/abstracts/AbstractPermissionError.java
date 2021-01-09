@@ -1,6 +1,7 @@
-package vip.wangjc.permission.error;
+package vip.wangjc.permission.error.abstracts;
 
 import vip.wangjc.permission.annotation.Permission;
+import vip.wangjc.permission.error.PermissionErrorResult;
 
 /**
  * 权限的错误处理：抽象类
