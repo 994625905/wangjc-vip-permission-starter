@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.0</version>
+        <version>2.3.4.RELEASE</version>
         <relativePath/>
     </parent>
 
     <groupId>vip.wangjc</groupId>
     <artifactId>wangjc-vip-permission-starter</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.9</version>
 
     <name>wangjc-vip</name>
     <description>wangjc-vip</description>
