@@ -58,7 +58,7 @@ public class PermissionTemplate {
                 }
             }else{
                 for(PermissionExpress permissionExpress : list){
-                    if(express.equals(permissionExpress.getExpress()) || requestUrl.equals(permissionExpress.getRequestUrl())){
+                    if(express.equals(permissionExpress.getExpress()) && requestUrl.equals(permissionExpress.getRequestUrl())){
                         flag = true;
                         break;
                     }
@@ -69,6 +69,7 @@ public class PermissionTemplate {
             if(flag){
                 return methodInvocation.proceed();
             }else{
+                logger.error("permission intercept:class[{}],method[{}]",methodInvocation.getClass().getName(),methodInvocation.getMethod().getName());
                 return PermissionRegister.getPermissionError().error(permission);
             }
         }catch (Throwable throwable){
